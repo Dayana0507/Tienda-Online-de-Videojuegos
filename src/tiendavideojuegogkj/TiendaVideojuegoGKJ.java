@@ -5,6 +5,8 @@
  */
 package tiendavideojuegogkj;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lenovo
@@ -16,8 +18,9 @@ public class TiendaVideojuegoGKJ {
      */
     public static void main(String[] args) {
         System.out.println("Probando");
-         System.out.println("Probando 222");
-        
+        System.out.println("Probando 222");
+        System.out.println("Hola a todos los presentes!!!");
+        JOptionPane.showMessageDialog(null, "HOLA");
     }
     
 }
