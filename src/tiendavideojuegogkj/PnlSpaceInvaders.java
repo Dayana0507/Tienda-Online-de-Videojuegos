@@ -60,6 +60,7 @@ public class PnlSpaceInvaders extends javax.swing.JPanel {
 
         jLabel5.setText("Compra realizada con exito");
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tiendavideojuegogkj/SpaceInvaders.png"))); // NOI18N
         jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

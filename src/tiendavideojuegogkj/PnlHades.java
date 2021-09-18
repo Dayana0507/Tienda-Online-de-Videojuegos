@@ -57,6 +57,7 @@ public class PnlHades extends javax.swing.JPanel {
 
         jLabel5.setText("Compra realizada con exito");
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tiendavideojuegogkj/Hades.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

@@ -57,6 +57,7 @@ public class PnlNBA extends javax.swing.JPanel {
 
         jLabel5.setText("Compra realizada con exito");
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tiendavideojuegogkj/NBA.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -106,7 +107,7 @@ public class PnlNBA extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAceptarCompra)
                     .addComponent(jLabel5))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
