@@ -57,7 +57,7 @@ public class PnlFrogger extends javax.swing.JPanel {
 
         jLabel5.setText("Compra realizada con exito");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\compu\\Documents\\ProyectoIntento4\\Frogger.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tiendavideojuegogkj/Frogger.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
