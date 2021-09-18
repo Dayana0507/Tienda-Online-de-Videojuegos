@@ -27,6 +27,7 @@ public class PnlFifa19 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollBar1 = new javax.swing.JScrollBar();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
@@ -37,17 +38,21 @@ public class PnlFifa19 extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Categoria Deportivo"));
+        jPanel1.setBackground(new java.awt.Color(51, 255, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Categoria Deportivo", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 24), new java.awt.Color(0, 51, 0))); // NOI18N
 
+        lblNombre.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
         lblNombre.setText("Fifa 19");
 
-        lblPrecio.setText("36");
+        lblPrecio.setText("29");
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel4.setText("Tipo dispositivo");
 
         cmbTipoDispositivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Play Station", "Xbox 360", "Pc", "Dispositivo Movil", " " }));
         cmbTipoDispositivo.setSelectedIndex(-1);
 
+        btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
         btnAceptarCompra.setText("Aceptar Compra");
         btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,6 +150,7 @@ public class PnlFifa19 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPrecio;
     // End of variables declaration//GEN-END:variables

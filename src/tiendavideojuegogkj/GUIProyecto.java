@@ -5,14 +5,19 @@
  */
 package tiendavideojuegogkj;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 /**
  *
  * @author compu
  */
 public class GUIProyecto extends javax.swing.JFrame {
-
+   
    // static ArrayList <Terror> listaTerror;  
    // static ArrayList <Accion> listaAccion;  
     static ArrayList <Videojuego> listaVideojuego; 
@@ -59,8 +64,9 @@ public class GUIProyecto extends javax.swing.JFrame {
      * Creates new form GUIProyecto
      */
     public GUIProyecto() {
-        initComponents();
        
+        initComponents();
+        
         panelFactura = new PnlFactura();
         panelCarrito = new PnlCarrito();
        // panelFactura.setVisible(true);
@@ -172,7 +178,13 @@ public class GUIProyecto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("videojuegos");
+        jMenuBar1.setBackground(new java.awt.Color(204, 204, 204));
+        jMenuBar1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createCompoundBorder(), javax.swing.BorderFactory.createCompoundBorder()));
+        jMenuBar1.setForeground(new java.awt.Color(255, 204, 51));
+
+        jMenu1.setForeground(new java.awt.Color(0, 102, 0));
+        jMenu1.setText("VIDEOJUEGOS");
+        jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jMenu5.setText("Acción");
 
@@ -436,7 +448,9 @@ public class GUIProyecto extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setForeground(new java.awt.Color(0, 153, 51));
         jMenu2.setText("Carrito de compra");
+        jMenu2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         mnCarrito.setText("Carrito");
         mnCarrito.addActionListener(new java.awt.event.ActionListener() {
@@ -466,7 +480,7 @@ public class GUIProyecto extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 525, Short.MAX_VALUE)
+            .addGap(0, 526, Short.MAX_VALUE)
         );
 
         pack();
@@ -1949,4 +1963,6 @@ public class GUIProyecto extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnTombRaider;
     private javax.swing.JMenuItem mnToment;
     // End of variables declaration//GEN-END:variables
+    
 }
+

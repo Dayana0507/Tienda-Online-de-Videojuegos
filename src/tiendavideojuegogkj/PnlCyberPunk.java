@@ -37,17 +37,23 @@ public class PnlCyberPunk extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Categoria Aventura"));
+        jPanel1.setBackground(new java.awt.Color(255, 51, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Categoria Aventura", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
 
+        lblNombre.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("Cyberpunk");
 
-        lblPrecio.setText("36");
+        lblPrecio.setText("21");
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Tipo dispositivo");
 
         cmbTipoDispositivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Play Station", "Xbox 360", "Pc", "Dispositivo Movil", " " }));
         cmbTipoDispositivo.setSelectedIndex(-1);
 
+        btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
         btnAceptarCompra.setText("Aceptar Compra");
         btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
