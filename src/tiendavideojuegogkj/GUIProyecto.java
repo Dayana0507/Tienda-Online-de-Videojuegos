@@ -5,17 +5,101 @@
  */
 package tiendavideojuegogkj;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author lenovo
+ * @author compu
  */
 public class GUIProyecto extends javax.swing.JFrame {
 
+   // static ArrayList <Terror> listaTerror;  
+   // static ArrayList <Accion> listaAccion;  
+    static ArrayList <Videojuego> listaVideojuego; 
+    PnlAlanWake panelAlanWake;
+    PnlAlienInsolation panelAlienInsolation;
+    PnlAmnesia panelAmnesia;
+    PnlArkSurvival panelArkSurvival;
+    PnlAsteriod panelAsteriod;
+    PnlCyberPunk panelCyber;
+    PnlDeadSpace panelDeadSpace;
+    PnlFallenOrder panelFallenOrder;
+    PnlFifa17 panelFifa17;
+    PnlFifa19 panelFifa19;
+    PnlFortniteBattle panelForniteBattle;
+    PnlFotballPes panelFootballPes;
+    PnlFreeFire panelFreeFire;
+    PnlFrogger panelFrogger;
+    PnlGalaga panelGalaga;
+    PnlGrandAuto panelGrandAuto;
+    PnlHades panelHades;
+    PnlLayerFear panelLayerFear;
+    PnlMarioTennis panelMarioTennis;
+    PnlNBA panelNBA;
+    PnlPacMan panelPacman;
+    PnlPokemonGo panelPokemonGo;
+    PnlPong panelPong;
+    PnlResidenEVil panelResidenEvil;
+    PnlResidenVillage panelResidenVillage;
+    PnlRocket panelRocket;
+    PnlSpaceInvaders panelSpaceInvaders;
+    PnlStarWars panelStarWars;
+    PnlTomRaider panelTomRaider;
+    PnlTormentSouls panelTormentSouls;
+    
+    
+    
+    
+    
+    
+    
+    PnlCarrito panelCarrito;
+    PnlFactura panelFactura;
     /**
      * Creates new form GUIProyecto
      */
     public GUIProyecto() {
         initComponents();
+       
+        panelFactura = new PnlFactura();
+        panelCarrito = new PnlCarrito();
+       // panelFactura.setVisible(true);
+      //  panelCarrito.setVisible(true);
+        panelAlanWake = new PnlAlanWake();
+        panelAlienInsolation = new PnlAlienInsolation();
+        panelAmnesia= new PnlAmnesia();
+        panelArkSurvival= new PnlArkSurvival();
+        panelAsteriod = new PnlAsteriod();
+        panelCyber= new PnlCyberPunk();
+        panelDeadSpace = new PnlDeadSpace();
+        panelFallenOrder = new PnlFallenOrder();
+        panelFifa17 = new PnlFifa17();
+        panelFifa19= new PnlFifa19();
+        panelFootballPes = new PnlFotballPes();
+        panelForniteBattle= new PnlFortniteBattle();
+        panelFreeFire= new PnlFreeFire();
+        panelFrogger = new PnlFrogger();
+        panelGalaga = new PnlGalaga();
+        panelGrandAuto = new PnlGrandAuto();
+        panelHades = new PnlHades();
+        panelLayerFear = new PnlLayerFear();
+        panelMarioTennis = new PnlMarioTennis();
+        panelNBA = new PnlNBA();
+        panelPacman= new PnlPacMan();
+        panelPokemonGo= new PnlPokemonGo();
+        panelPong = new PnlPong();
+        panelResidenEvil = new PnlResidenEVil();
+        panelResidenVillage = new PnlResidenVillage();
+        panelRocket= new PnlRocket();
+        panelSpaceInvaders = new PnlSpaceInvaders();
+        panelStarWars= new PnlStarWars();
+        panelTomRaider = new PnlTomRaider();
+        panelTormentSouls = new PnlTormentSouls();
+
+        listaVideojuego = new ArrayList<>();
+        this.setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
+       
     }
 
     /**
@@ -27,22 +111,1760 @@ public class GUIProyecto extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItem29 = new javax.swing.JMenuItem();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
+        mnHades = new javax.swing.JMenuItem();
+        mnToment = new javax.swing.JMenuItem();
+        mnStarWars = new javax.swing.JMenuItem();
+        mnFallen = new javax.swing.JMenuItem();
+        mnGrandAuto = new javax.swing.JMenuItem();
+        mnForniteBatlte = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        mnFreeFire = new javax.swing.JMenuItem();
+        mnResidentVillage = new javax.swing.JMenuItem();
+        mnPokemonGo = new javax.swing.JMenuItem();
+        mnCyberpunk = new javax.swing.JMenuItem();
+        mnTombRaider = new javax.swing.JMenuItem();
+        mnArkSurvival = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        mnPacman = new javax.swing.JMenuItem();
+        mnGalaga = new javax.swing.JMenuItem();
+        mnFrogger = new javax.swing.JMenuItem();
+        mnPong = new javax.swing.JMenuItem();
+        mnSpaceInvaders = new javax.swing.JMenuItem();
+        mnAsteroid = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        mnFifa17 = new javax.swing.JMenuItem();
+        mnRocket = new javax.swing.JMenuItem();
+        mnPes2020 = new javax.swing.JMenuItem();
+        mnNBA = new javax.swing.JMenuItem();
+        mnMarioTennis = new javax.swing.JMenuItem();
+        mnFifa19 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        mnAlanWake = new javax.swing.JMenuItem();
+        mnAlien = new javax.swing.JMenuItem();
+        mnAmnesia = new javax.swing.JMenuItem();
+        mnDeadSpace = new javax.swing.JMenuItem();
+        mnLayerFear = new javax.swing.JMenuItem();
+        mnResidentEvil = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        mnCarrito = new javax.swing.JMenuItem();
+        mnRealizarCompra = new javax.swing.JMenuItem();
+
+        jMenu3.setText("jMenu3");
+
+        jMenuItem7.setText("jMenuItem7");
+
+        jMenuItem9.setText("jMenuItem9");
+
+        jMenu6.setText("jMenu6");
+
+        jMenuItem14.setText("jMenuItem14");
+
+        jMenuItem29.setText("jMenuItem29");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jMenu1.setText("videojuegos");
+
+        jMenu5.setText("Acción");
+
+        mnHades.setText("Hades");
+        mnHades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnHadesActionPerformed(evt);
+            }
+        });
+        jMenu5.add(mnHades);
+
+        mnToment.setText("Torment Souls");
+        mnToment.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnTomentActionPerformed(evt);
+            }
+        });
+        jMenu5.add(mnToment);
+
+        mnStarWars.setText("Star  Wars");
+        mnStarWars.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnStarWarsActionPerformed(evt);
+            }
+        });
+        jMenu5.add(mnStarWars);
+
+        mnFallen.setText("Fallen Order");
+        mnFallen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnFallenActionPerformed(evt);
+            }
+        });
+        jMenu5.add(mnFallen);
+
+        mnGrandAuto.setText("Grand Theft Auto V");
+        mnGrandAuto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnGrandAutoActionPerformed(evt);
+            }
+        });
+        jMenu5.add(mnGrandAuto);
+
+        mnForniteBatlte.setText("Fortnite Battle Royale");
+        mnForniteBatlte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnForniteBatlteActionPerformed(evt);
+            }
+        });
+        jMenu5.add(mnForniteBatlte);
+
+        jMenu1.add(jMenu5);
+
+        jMenu7.setText("Aventura");
+
+        mnFreeFire.setText(" Free fire");
+        mnFreeFire.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnFreeFireActionPerformed(evt);
+            }
+        });
+        jMenu7.add(mnFreeFire);
+
+        mnResidentVillage.setText("Resident evil village");
+        mnResidentVillage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnResidentVillageActionPerformed(evt);
+            }
+        });
+        jMenu7.add(mnResidentVillage);
+
+        mnPokemonGo.setText("Pokemon Go");
+        mnPokemonGo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnPokemonGoActionPerformed(evt);
+            }
+        });
+        jMenu7.add(mnPokemonGo);
+
+        mnCyberpunk.setText("Cyberpunk");
+        mnCyberpunk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnCyberpunkActionPerformed(evt);
+            }
+        });
+        jMenu7.add(mnCyberpunk);
+
+        mnTombRaider.setText("Tomb Raider");
+        mnTombRaider.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnTombRaiderActionPerformed(evt);
+            }
+        });
+        jMenu7.add(mnTombRaider);
+
+        mnArkSurvival.setText("Ark: Survival");
+        mnArkSurvival.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnArkSurvivalActionPerformed(evt);
+            }
+        });
+        jMenu7.add(mnArkSurvival);
+
+        jMenu1.add(jMenu7);
+
+        jMenu9.setText("Arcade");
+
+        mnPacman.setText("Pac-man");
+        mnPacman.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnPacmanActionPerformed(evt);
+            }
+        });
+        jMenu9.add(mnPacman);
+
+        mnGalaga.setText(" Galaga");
+        mnGalaga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnGalagaActionPerformed(evt);
+            }
+        });
+        jMenu9.add(mnGalaga);
+
+        mnFrogger.setText("Frogger");
+        mnFrogger.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnFroggerActionPerformed(evt);
+            }
+        });
+        jMenu9.add(mnFrogger);
+
+        mnPong.setText("Pong");
+        mnPong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnPongActionPerformed(evt);
+            }
+        });
+        jMenu9.add(mnPong);
+
+        mnSpaceInvaders.setText("Space Invaders");
+        mnSpaceInvaders.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnSpaceInvadersActionPerformed(evt);
+            }
+        });
+        jMenu9.add(mnSpaceInvaders);
+
+        mnAsteroid.setText("Asteroids");
+        mnAsteroid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnAsteroidActionPerformed(evt);
+            }
+        });
+        jMenu9.add(mnAsteroid);
+
+        jMenu1.add(jMenu9);
+
+        jMenu8.setText("Deportivo");
+
+        mnFifa17.setText("FIFA 17");
+        mnFifa17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnFifa17ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(mnFifa17);
+
+        mnRocket.setText("Rocket League");
+        mnRocket.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnRocketActionPerformed(evt);
+            }
+        });
+        jMenu8.add(mnRocket);
+
+        mnPes2020.setText("eFootball PES 2020");
+        mnPes2020.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnPes2020ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(mnPes2020);
+
+        mnNBA.setText("NBA 2K18 ");
+        mnNBA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnNBAActionPerformed(evt);
+            }
+        });
+        jMenu8.add(mnNBA);
+
+        mnMarioTennis.setText("Mario Tennis Aces");
+        mnMarioTennis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnMarioTennisActionPerformed(evt);
+            }
+        });
+        jMenu8.add(mnMarioTennis);
+
+        mnFifa19.setText("FIFA 19");
+        mnFifa19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnFifa19ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(mnFifa19);
+
+        jMenu1.add(jMenu8);
+
+        jMenu4.setText("Terror");
+
+        mnAlanWake.setText("Alan Wake");
+        mnAlanWake.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnAlanWakeActionPerformed(evt);
+            }
+        });
+        jMenu4.add(mnAlanWake);
+
+        mnAlien.setText("Alien Insolation");
+        mnAlien.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnAlienActionPerformed(evt);
+            }
+        });
+        jMenu4.add(mnAlien);
+
+        mnAmnesia.setText("Amnesia");
+        mnAmnesia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnAmnesiaActionPerformed(evt);
+            }
+        });
+        jMenu4.add(mnAmnesia);
+
+        mnDeadSpace.setText("Dead Space");
+        mnDeadSpace.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnDeadSpaceActionPerformed(evt);
+            }
+        });
+        jMenu4.add(mnDeadSpace);
+
+        mnLayerFear.setText("Layer of Fear");
+        mnLayerFear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnLayerFearActionPerformed(evt);
+            }
+        });
+        jMenu4.add(mnLayerFear);
+
+        mnResidentEvil.setText("Resident Evil 0 HD");
+        mnResidentEvil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnResidentEvilActionPerformed(evt);
+            }
+        });
+        jMenu4.add(mnResidentEvil);
+
+        jMenu1.add(jMenu4);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Carrito de compra");
+
+        mnCarrito.setText("Carrito");
+        mnCarrito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnCarritoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(mnCarrito);
+
+        mnRealizarCompra.setText("Realizar compra");
+        mnRealizarCompra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnRealizarCompraActionPerformed(evt);
+            }
+        });
+        jMenu2.add(mnRealizarCompra);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 615, Short.MAX_VALUE)
+            .addGap(0, 734, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 468, Short.MAX_VALUE)
+            .addGap(0, 525, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void mnCarritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnCarritoActionPerformed
+    
+
+    panelCarrito.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelCyber.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelCarrito.setSize(800,800);
+    panelCarrito.setLocation(300,50);
+    add(panelCarrito);
+    revalidate();
+    repaint();  
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnCarritoActionPerformed
+
+    private void mnRealizarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnRealizarCompraActionPerformed
+
+    panelFactura.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelCyber.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelFactura.setSize(800,800);
+    panelFactura.setLocation(300,50);
+    add(panelFactura);
+    revalidate();
+    repaint();  
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnRealizarCompraActionPerformed
+
+    private void mnAlienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAlienActionPerformed
+    
+    panelAlienInsolation.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelCyber.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAlienInsolation.setSize(800,800);
+    panelAlienInsolation.setLocation(300,50);
+    add(panelAlienInsolation);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnAlienActionPerformed
+
+    private void mnDeadSpaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnDeadSpaceActionPerformed
+
+    panelDeadSpace.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelCyber.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelDeadSpace.setSize(800,800);
+    panelDeadSpace.setLocation(300,50);
+    add(panelDeadSpace);
+    revalidate();
+    repaint();
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnDeadSpaceActionPerformed
+
+    private void mnTomentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnTomentActionPerformed
+
+    panelTormentSouls.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelTormentSouls.setSize(800,800);
+    panelTormentSouls.setLocation(300,50);
+    add(panelTormentSouls);
+    revalidate();
+    repaint();
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnTomentActionPerformed
+
+    private void mnFallenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnFallenActionPerformed
+
+    panelFallenOrder.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelFallenOrder.setSize(800,800);
+    panelFallenOrder.setLocation(300,50);
+    add(panelFallenOrder);
+    revalidate();
+    repaint();
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnFallenActionPerformed
+
+    private void mnForniteBatlteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnForniteBatlteActionPerformed
+ 
+    panelForniteBattle.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelForniteBattle.setSize(800,800);
+    panelForniteBattle.setLocation(300,50);
+    add(panelForniteBattle);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnForniteBatlteActionPerformed
+
+    private void mnPokemonGoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnPokemonGoActionPerformed
+    
+    panelPokemonGo.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelPokemonGo.setSize(800,800);
+    panelPokemonGo.setLocation(300,50);
+    add(panelPokemonGo);
+    revalidate();
+    repaint();    
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnPokemonGoActionPerformed
+
+    private void mnTombRaiderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnTombRaiderActionPerformed
+
+    panelTomRaider.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCyber.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelTomRaider.setSize(800,800);
+    panelTomRaider.setLocation(300,50);
+    add(panelTomRaider);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnTombRaiderActionPerformed
+
+    private void mnHadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnHadesActionPerformed
+
+    panelHades.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelHades.setSize(800,800);
+    panelHades.setLocation(300,50);
+    add(panelHades);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnHadesActionPerformed
+
+    private void mnStarWarsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnStarWarsActionPerformed
+    
+    panelStarWars.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelStarWars.setSize(800,800);
+    panelStarWars.setLocation(300,50);
+    add(panelStarWars);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnStarWarsActionPerformed
+
+    private void mnGrandAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnGrandAutoActionPerformed
+ 
+    panelGrandAuto.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelGrandAuto.setSize(800,800);
+    panelGrandAuto.setLocation(300,50);
+    add(panelGrandAuto);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnGrandAutoActionPerformed
+
+    private void mnFreeFireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnFreeFireActionPerformed
+
+    panelFreeFire.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelFreeFire.setSize(800,800);
+    panelFreeFire.setLocation(300,50);
+    add(panelFreeFire);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnFreeFireActionPerformed
+
+    private void mnResidentVillageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnResidentVillageActionPerformed
+    
+    panelResidenVillage.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelCyber.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelResidenVillage.setSize(800,800);
+    panelResidenVillage.setLocation(300,50);
+    add(panelResidenVillage);
+    revalidate();
+    repaint();
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnResidentVillageActionPerformed
+
+    private void mnCyberpunkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnCyberpunkActionPerformed
+
+    panelCyber.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelCyber.setSize(800,800);
+    panelCyber.setLocation(300,50);
+    add(panelCyber);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnCyberpunkActionPerformed
+
+    private void mnPacmanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnPacmanActionPerformed
+    
+    panelPacman.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelPacman.setSize(800,800);
+    panelPacman.setLocation(300,50);
+    add(panelPacman);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnPacmanActionPerformed
+
+    private void mnGalagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnGalagaActionPerformed
+     
+    panelGalaga.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelGalaga.setSize(800,800);
+    panelGalaga.setLocation(300,50);
+    add(panelGalaga);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnGalagaActionPerformed
+
+    private void mnFroggerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnFroggerActionPerformed
+
+    panelFrogger.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelCyber.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelFrogger.setSize(800,800);
+    panelFrogger.setLocation(300,50);
+    add(panelFrogger);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnFroggerActionPerformed
+
+    private void mnPongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnPongActionPerformed
+
+    panelPong.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCyber.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelPong.setSize(800,800);
+    panelPong.setLocation(300,50);
+    add(panelPong);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnPongActionPerformed
+
+    private void mnSpaceInvadersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnSpaceInvadersActionPerformed
+
+    panelSpaceInvaders.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelCyber.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelSpaceInvaders.setSize(800,800);
+    panelSpaceInvaders.setLocation(300,50);
+    add(panelSpaceInvaders);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnSpaceInvadersActionPerformed
+
+    private void mnAsteroidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAsteroidActionPerformed
+
+    panelAsteriod.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelCyber.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAsteriod.setSize(800,800);
+    panelAsteriod.setLocation(300,50);
+    add(panelAsteriod);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnAsteroidActionPerformed
+
+    private void mnFifa17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnFifa17ActionPerformed
+
+    panelFifa17.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelCyber.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelFifa17.setSize(800,800);
+    panelFifa17.setLocation(300,50);
+    add(panelFifa17);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnFifa17ActionPerformed
+
+    private void mnRocketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnRocketActionPerformed
+    
+    panelRocket.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelCyber.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelRocket.setSize(800,800);
+    panelRocket.setLocation(300,50);
+    add(panelRocket);
+    revalidate();
+    repaint();    
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnRocketActionPerformed
+
+    private void mnPes2020ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnPes2020ActionPerformed
+
+    panelFootballPes.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelCyber.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelFootballPes.setSize(800,800);
+    panelFootballPes.setLocation(300,50);
+    add(panelFootballPes);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnPes2020ActionPerformed
+
+    private void mnNBAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnNBAActionPerformed
+
+    panelNBA.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelCyber.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelNBA.setSize(800,800);
+    panelNBA.setLocation(300,50);
+    add(panelNBA);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnNBAActionPerformed
+
+    private void mnMarioTennisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnMarioTennisActionPerformed
+
+    panelMarioTennis.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelCyber.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelMarioTennis.setSize(800,800);
+    panelMarioTennis.setLocation(300,50);
+    add(panelMarioTennis);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnMarioTennisActionPerformed
+
+    private void mnFifa19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnFifa19ActionPerformed
+
+    panelFifa19.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelCyber.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelFifa19.setSize(800,800);
+    panelFifa19.setLocation(300,50);
+    add(panelFifa19);
+    revalidate();
+    repaint();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnFifa19ActionPerformed
+
+    private void mnAlanWakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAlanWakeActionPerformed
+    
+    panelAlanWake.setVisible(true);
+    panelCyber.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAlanWake.setSize(800,800);
+    panelAlanWake.setLocation(300,50);
+    add(panelAlanWake);
+    revalidate();
+    repaint();    
+    
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnAlanWakeActionPerformed
+
+    private void mnAmnesiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAmnesiaActionPerformed
+    
+    panelAmnesia.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelCyber.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelAmnesia.setSize(800,800);
+    panelAmnesia.setLocation(300,50);
+    add(panelAmnesia);
+    revalidate();
+    repaint();    
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnAmnesiaActionPerformed
+
+    private void mnLayerFearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnLayerFearActionPerformed
+
+    panelLayerFear.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelCyber.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelLayerFear.setSize(800,800);
+    panelLayerFear.setLocation(300,50);
+    add(panelLayerFear);
+    revalidate();
+    repaint();
+        
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnLayerFearActionPerformed
+
+    private void mnResidentEvilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnResidentEvilActionPerformed
+   
+    panelResidenEvil.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelCyber.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setVisible(false);
+    panelResidenEvil.setSize(800,800);
+    panelResidenEvil.setLocation(300,50);
+    add(panelResidenEvil);
+    revalidate();
+    repaint();     
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnResidentEvilActionPerformed
+
+    private void mnArkSurvivalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnArkSurvivalActionPerformed
+
+    panelArkSurvival.setVisible(true);
+    panelAlanWake.setVisible(false);
+    panelAlienInsolation.setVisible(false);
+    panelAmnesia.setVisible(false);
+    panelCarrito.setVisible(false);
+    panelAsteriod.setVisible(false);
+    panelResidenEvil.setVisible(false);
+    panelDeadSpace.setVisible(false);
+    panelFallenOrder.setVisible(false);
+    panelFifa17.setVisible(false);
+    panelFifa19.setVisible(false);
+    panelFootballPes.setVisible(false);
+    panelForniteBattle.setVisible(false);
+    panelFreeFire.setVisible(false);
+    panelFrogger.setVisible(false);
+    panelGalaga.setVisible(false);
+    panelGrandAuto.setVisible(false);
+    panelHades.setVisible(false);
+    panelLayerFear.setVisible(false);
+    panelMarioTennis.setVisible(false);
+    panelNBA.setVisible(false);
+    panelPacman.setVisible(false);
+    panelPokemonGo.setVisible(false);
+    panelPong.setVisible(false);
+    panelCyber.setVisible(false);
+    panelResidenVillage.setVisible(false);
+    panelRocket.setVisible(false);
+    panelSpaceInvaders.setVisible(false);
+    panelStarWars.setVisible(false);
+    panelTomRaider.setVisible(false);
+    panelTormentSouls.setVisible(false);
+    panelFactura.setVisible(false);
+    panelArkSurvival.setSize(800,800);
+    panelArkSurvival.setLocation(300,50);
+    add(panelArkSurvival);
+    revalidate();
+    repaint();
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnArkSurvivalActionPerformed
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -69,6 +1891,7 @@ public class GUIProyecto extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(GUIProyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -79,5 +1902,51 @@ public class GUIProyecto extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem29;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenuItem mnAlanWake;
+    private javax.swing.JMenuItem mnAlien;
+    private javax.swing.JMenuItem mnAmnesia;
+    private javax.swing.JMenuItem mnArkSurvival;
+    private javax.swing.JMenuItem mnAsteroid;
+    private javax.swing.JMenuItem mnCarrito;
+    private javax.swing.JMenuItem mnCyberpunk;
+    private javax.swing.JMenuItem mnDeadSpace;
+    private javax.swing.JMenuItem mnFallen;
+    private javax.swing.JMenuItem mnFifa17;
+    private javax.swing.JMenuItem mnFifa19;
+    private javax.swing.JMenuItem mnForniteBatlte;
+    private javax.swing.JMenuItem mnFreeFire;
+    private javax.swing.JMenuItem mnFrogger;
+    private javax.swing.JMenuItem mnGalaga;
+    private javax.swing.JMenuItem mnGrandAuto;
+    private javax.swing.JMenuItem mnHades;
+    private javax.swing.JMenuItem mnLayerFear;
+    private javax.swing.JMenuItem mnMarioTennis;
+    private javax.swing.JMenuItem mnNBA;
+    private javax.swing.JMenuItem mnPacman;
+    private javax.swing.JMenuItem mnPes2020;
+    private javax.swing.JMenuItem mnPokemonGo;
+    private javax.swing.JMenuItem mnPong;
+    private javax.swing.JMenuItem mnRealizarCompra;
+    private javax.swing.JMenuItem mnResidentEvil;
+    private javax.swing.JMenuItem mnResidentVillage;
+    private javax.swing.JMenuItem mnRocket;
+    private javax.swing.JMenuItem mnSpaceInvaders;
+    private javax.swing.JMenuItem mnStarWars;
+    private javax.swing.JMenuItem mnTombRaider;
+    private javax.swing.JMenuItem mnToment;
     // End of variables declaration//GEN-END:variables
 }
