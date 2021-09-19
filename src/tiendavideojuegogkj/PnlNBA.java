@@ -43,7 +43,7 @@ public class PnlNBA extends javax.swing.JPanel {
         lblNombre.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
         lblNombre.setText("NBA 2K18");
 
-        lblPrecio.setText("14");
+        lblPrecio.setText("14.1");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel4.setText("Tipo dispositivo");
@@ -53,6 +53,7 @@ public class PnlNBA extends javax.swing.JPanel {
 
         btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
         btnAceptarCompra.setText("Aceptar Compra");
+        btnAceptarCompra.setBorder(new javax.swing.border.MatteBorder(null));
         btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAceptarCompraActionPerformed(evt);
@@ -80,13 +81,16 @@ public class PnlNBA extends javax.swing.JPanel {
                         .addGap(49, 49, 49)
                         .addComponent(lblPrecio))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(32, 32, 32)
-                        .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnAceptarCompra)
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel5)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnAceptarCompra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(35, 35, 35)
+                                .addComponent(jLabel5)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(28, Short.MAX_VALUE)
@@ -109,7 +113,7 @@ public class PnlNBA extends javax.swing.JPanel {
                     .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptarCompra)
+                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

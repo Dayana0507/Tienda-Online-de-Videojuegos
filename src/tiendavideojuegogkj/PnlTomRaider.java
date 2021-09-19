@@ -44,7 +44,7 @@ public class PnlTomRaider extends javax.swing.JPanel {
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("Tomb Raider");
 
-        lblPrecio.setText("31");
+        lblPrecio.setText("31.8");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -55,6 +55,7 @@ public class PnlTomRaider extends javax.swing.JPanel {
 
         btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
         btnAceptarCompra.setText("Aceptar Compra");
+        btnAceptarCompra.setBorder(new javax.swing.border.MatteBorder(null));
         btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAceptarCompraActionPerformed(evt);
@@ -88,8 +89,8 @@ public class PnlTomRaider extends javax.swing.JPanel {
                                 .addGap(32, 32, 32)
                                 .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnAceptarCompra)
-                                .addGap(45, 45, 45)
+                                .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36)
                                 .addComponent(jLabel5))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -112,7 +113,7 @@ public class PnlTomRaider extends javax.swing.JPanel {
                     .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptarCompra)
+                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addContainerGap(50, Short.MAX_VALUE))
         );

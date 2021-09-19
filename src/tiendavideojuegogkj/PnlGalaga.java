@@ -44,7 +44,7 @@ public class PnlGalaga extends javax.swing.JPanel {
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("Galaga");
 
-        lblPrecio.setText("36");
+        lblPrecio.setText("36.7");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -55,6 +55,7 @@ public class PnlGalaga extends javax.swing.JPanel {
 
         btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
         btnAceptarCompra.setText("Aceptar Compra");
+        btnAceptarCompra.setBorder(new javax.swing.border.MatteBorder(null));
         btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAceptarCompraActionPerformed(evt);
@@ -108,7 +109,7 @@ public class PnlGalaga extends javax.swing.JPanel {
                     .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptarCompra)
+                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addContainerGap(50, Short.MAX_VALUE))
         );

@@ -44,7 +44,7 @@ public class PnlResidenEVil extends javax.swing.JPanel {
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("Resident Evil 0 HD");
 
-        lblPrecio.setText("36");
+        lblPrecio.setText("36.5");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -55,6 +55,7 @@ public class PnlResidenEVil extends javax.swing.JPanel {
 
         btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
         btnAceptarCompra.setText("Aceptar Compra");
+        btnAceptarCompra.setBorder(new javax.swing.border.MatteBorder(null));
         btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAceptarCompraActionPerformed(evt);
@@ -84,9 +85,9 @@ public class PnlResidenEVil extends javax.swing.JPanel {
                                 .addGap(18, 18, 18)
                                 .addComponent(lblPrecio))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnAceptarCompra)
-                                    .addComponent(jLabel4))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(35, 35, 35)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -113,7 +114,7 @@ public class PnlResidenEVil extends javax.swing.JPanel {
                     .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptarCompra)
+                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addContainerGap(50, Short.MAX_VALUE))
         );

@@ -30,15 +30,26 @@ public class PnlAlanWake extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnAceptarCompra1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
         lblPrecio = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         cmbTipoDispositivo = new javax.swing.JComboBox<>();
-        btnAceptarCompra = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        btnAceptarCompra = new javax.swing.JButton();
+        btnAceptarCompra2 = new javax.swing.JButton();
+
+        btnAceptarCompra1.setForeground(new java.awt.Color(255, 0, 0));
+        btnAceptarCompra1.setText("Aceptar Compra");
+        btnAceptarCompra1.setBorder(new javax.swing.border.MatteBorder(null));
+        btnAceptarCompra1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAceptarCompra1ActionPerformed(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(51, 180, 40));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Categoría Terror", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 24), new java.awt.Color(51, 51, 0))); // NOI18N
@@ -47,7 +58,7 @@ public class PnlAlanWake extends javax.swing.JPanel {
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("ALAN WAKE");
 
-        lblPrecio.setText("36 ");
+        lblPrecio.setText("36.9 ");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -56,45 +67,63 @@ public class PnlAlanWake extends javax.swing.JPanel {
         cmbTipoDispositivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Play Station", "Xbox 360", "Pc", "Dispositivo Movil", " " }));
         cmbTipoDispositivo.setSelectedIndex(-1);
 
-        btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
-        btnAceptarCompra.setText("Aceptar Compra");
-        btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAceptarCompraActionPerformed(evt);
-            }
-        });
-
         jLabel5.setText("Compra realizada con exito");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tiendavideojuegogkj/AlanWake.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
+        btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
+        btnAceptarCompra.setText("Aceptar Compra");
+        btnAceptarCompra.setBorder(new javax.swing.border.MatteBorder(null));
+        btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAceptarCompraActionPerformed(evt);
+            }
+        });
+
+        btnAceptarCompra2.setForeground(new java.awt.Color(255, 0, 0));
+        btnAceptarCompra2.setText("Aceptar Compra");
+        btnAceptarCompra2.setBorder(new javax.swing.border.MatteBorder(null));
+        btnAceptarCompra2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAceptarCompra2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(83, 83, 83)
-                                .addComponent(jLabel1))
-                            .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(83, 83, 83)
+                                        .addComponent(jLabel1))
+                                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPrecio))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(32, 32, 32)
+                                .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(btnAceptarCompra2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lblPrecio))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(32, 32, 32)
-                        .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnAceptarCompra)
-                        .addGap(45, 45, 45)
                         .addComponent(jLabel5)))
                 .addContainerGap(43, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(173, 173, 173)
+                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(174, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,11 +140,16 @@ public class PnlAlanWake extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
+                .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptarCompra)
-                    .addComponent(jLabel5))
-                .addContainerGap(50, Short.MAX_VALUE))
+                    .addComponent(jLabel5)
+                    .addComponent(btnAceptarCompra2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(51, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(265, 265, 265)
+                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(266, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -138,9 +172,29 @@ public class PnlAlanWake extends javax.swing.JPanel {
     private void btnAceptarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarCompraActionPerformed
 
         GUIProyecto.listaVideojuego.add(new Videojuego(lblNombre.getText(),(String)cmbTipoDispositivo.getSelectedItem(),Double.parseDouble(lblPrecio.getText())));
+
         // TODO add your handling code here:
+
         limpiarPanel();
     }//GEN-LAST:event_btnAceptarCompraActionPerformed
+
+    private void btnAceptarCompra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarCompra1ActionPerformed
+
+        GUIProyecto.listaVideojuego.add(new Videojuego(lblNombre.getText(),(String)cmbTipoDispositivo.getSelectedItem(),Double.parseDouble(lblPrecio.getText())));
+
+        // TODO add your handling code here:
+
+        limpiarPanel();
+    }//GEN-LAST:event_btnAceptarCompra1ActionPerformed
+
+    private void btnAceptarCompra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarCompra2ActionPerformed
+
+        GUIProyecto.listaVideojuego.add(new Videojuego(lblNombre.getText(),(String)cmbTipoDispositivo.getSelectedItem(),Double.parseDouble(lblPrecio.getText())));
+
+        // TODO add your handling code here:
+
+        limpiarPanel();
+    }//GEN-LAST:event_btnAceptarCompra2ActionPerformed
     
     public void limpiarPanel(){
         
@@ -149,6 +203,8 @@ public class PnlAlanWake extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAceptarCompra;
+    private javax.swing.JButton btnAceptarCompra1;
+    private javax.swing.JButton btnAceptarCompra2;
     private javax.swing.JComboBox<String> cmbTipoDispositivo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

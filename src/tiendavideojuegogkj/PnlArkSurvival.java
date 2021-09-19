@@ -55,6 +55,7 @@ public class PnlArkSurvival extends javax.swing.JPanel {
 
         btnAceptarCompra.setForeground(new java.awt.Color(255, 0, 0));
         btnAceptarCompra.setText("Aceptar Compra");
+        btnAceptarCompra.setBorder(new javax.swing.border.MatteBorder(null));
         btnAceptarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAceptarCompraActionPerformed(evt);
@@ -90,8 +91,8 @@ public class PnlArkSurvival extends javax.swing.JPanel {
                                 .addGap(32, 32, 32)
                                 .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnAceptarCompra)
-                                .addGap(45, 45, 45)
+                                .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(37, 37, 37)
                                 .addComponent(jLabel5))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
@@ -115,7 +116,7 @@ public class PnlArkSurvival extends javax.swing.JPanel {
                     .addComponent(cmbTipoDispositivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptarCompra)
+                    .addComponent(btnAceptarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
@@ -140,7 +141,7 @@ public class PnlArkSurvival extends javax.swing.JPanel {
     private void btnAceptarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarCompraActionPerformed
 
         GUIProyecto.listaVideojuego.add(new Videojuego(lblNombre.getText(),(String)cmbTipoDispositivo.getSelectedItem(),Double.parseDouble(lblPrecio.getText())));
-    
+
         limpiarPanel();
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAceptarCompraActionPerformed
