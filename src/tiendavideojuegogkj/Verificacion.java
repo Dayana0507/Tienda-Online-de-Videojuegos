@@ -32,7 +32,9 @@ public class Verificacion {
       
     // return nombre.matches("[a-zA-Z]+.*[a-zA-Z]+.*[y]{1}.*[a-zA-Z]+.*[a-zA-Z]+.*\\s[N]{1}\\d+-\\d+");    //*[y]?.*[a-zA-Z]+\\N[0-6]-\\d"); 
     
-    return nombre.matches("[a-zA-Z]+.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*\\s[N]{1}\\d+-\\d+");  
+    //return nombre.matches("[a-zA-Z]+.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*[a-zA-Z]*.*\\s[N]{1}\\d+-\\d+");  
+    return nombre.matches("[a-zA-Z]*\\s*[a-zA-Z]*\\s*[a-zA-Z]*\\s*[a-zA-Z]*\\s*[a-zA-Z]*\\s[N]{1}\\d+-\\d+");
+    
     } 
      
 }
