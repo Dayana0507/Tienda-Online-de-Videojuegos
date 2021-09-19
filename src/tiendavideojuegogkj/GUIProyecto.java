@@ -162,7 +162,6 @@ public class GUIProyecto extends javax.swing.JFrame {
         mnResidentEvil = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         mnCarrito = new javax.swing.JMenuItem();
-        mnRealizarCompra = new javax.swing.JMenuItem();
 
         jMenu3.setText("jMenu3");
 
@@ -460,14 +459,6 @@ public class GUIProyecto extends javax.swing.JFrame {
         });
         jMenu2.add(mnCarrito);
 
-        mnRealizarCompra.setText("Realizar compra");
-        mnRealizarCompra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnRealizarCompraActionPerformed(evt);
-            }
-        });
-        jMenu2.add(mnRealizarCompra);
-
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -522,7 +513,7 @@ public class GUIProyecto extends javax.swing.JFrame {
     panelFactura.setVisible(false);
     panelArkSurvival.setVisible(false);
     panelCarrito.setSize(800,800);
-    panelCarrito.setLocation(300,50);
+    panelCarrito.setLocation(300,-200);
     add(panelCarrito);
     revalidate();
     repaint();  
@@ -533,50 +524,6 @@ public class GUIProyecto extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_mnCarritoActionPerformed
-
-    private void mnRealizarCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnRealizarCompraActionPerformed
-
-    panelFactura.setVisible(true);
-    panelAlanWake.setVisible(false);
-    panelAlienInsolation.setVisible(false);
-    panelCyber.setVisible(false);
-    panelCarrito.setVisible(false);
-    panelAsteriod.setVisible(false);
-    panelAmnesia.setVisible(false);
-    panelDeadSpace.setVisible(false);
-    panelFallenOrder.setVisible(false);
-    panelFifa17.setVisible(false);
-    panelFifa19.setVisible(false);
-    panelFootballPes.setVisible(false);
-    panelForniteBattle.setVisible(false);
-    panelFreeFire.setVisible(false);
-    panelFrogger.setVisible(false);
-    panelGalaga.setVisible(false);
-    panelGrandAuto.setVisible(false);
-    panelHades.setVisible(false);
-    panelLayerFear.setVisible(false);
-    panelMarioTennis.setVisible(false);
-    panelNBA.setVisible(false);
-    panelPacman.setVisible(false);
-    panelPokemonGo.setVisible(false);
-    panelPong.setVisible(false);
-    panelResidenEvil.setVisible(false);
-    panelResidenVillage.setVisible(false);
-    panelRocket.setVisible(false);
-    panelSpaceInvaders.setVisible(false);
-    panelStarWars.setVisible(false);
-    panelTomRaider.setVisible(false);
-    panelTormentSouls.setVisible(false);
-    panelCarrito.setVisible(false);
-    panelArkSurvival.setVisible(false);
-    panelFactura.setSize(800,800);
-    panelFactura.setLocation(300,50);
-    add(panelFactura);
-    revalidate();
-    repaint();  
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mnRealizarCompraActionPerformed
 
     private void mnAlienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAlienActionPerformed
     
@@ -1350,7 +1297,7 @@ public class GUIProyecto extends javax.swing.JFrame {
     panelFactura.setVisible(false);
     panelArkSurvival.setVisible(false);
     panelSpaceInvaders.setSize(800,800);
-    panelSpaceInvaders.setLocation(300,50);
+    panelSpaceInvaders.setLocation(310,-120);
     add(panelSpaceInvaders);
     revalidate();
     repaint();
@@ -1954,7 +1901,6 @@ public class GUIProyecto extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnPes2020;
     private javax.swing.JMenuItem mnPokemonGo;
     private javax.swing.JMenuItem mnPong;
-    private javax.swing.JMenuItem mnRealizarCompra;
     private javax.swing.JMenuItem mnResidentEvil;
     private javax.swing.JMenuItem mnResidentVillage;
     private javax.swing.JMenuItem mnRocket;

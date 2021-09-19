@@ -18,6 +18,7 @@ public class PnlCarrito extends javax.swing.JPanel {
 
 DefaultTableModel dtmModelo;
 PnlFactura panelFactura;
+GUIFactura guiFactura;
 //Factura factura;
 static LinkedList<Double> factura;
 
@@ -39,7 +40,8 @@ static LinkedList<Double> factura;
         panelFactura = new PnlFactura();
         factura= new LinkedList<>();
         pnlMostrarCarrito.setVisible(true);
-   
+        guiFactura = new GUIFactura();
+        txtPrecio.setEditable(false);
     }
 
     /**
@@ -61,10 +63,12 @@ static LinkedList<Double> factura;
         chkCarrito = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
         txtPrecio = new javax.swing.JTextField();
+        btnBorrar = new javax.swing.JButton();
 
         pnlMostrarCarrito.setBorder(javax.swing.BorderFactory.createTitledBorder("Carrito"));
 
         btnMostrarVideojuegos.setText("Mostrar Carrito");
+        btnMostrarVideojuegos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnMostrarVideojuegos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMostrarVideojuegosActionPerformed(evt);
@@ -85,6 +89,7 @@ static LinkedList<Double> factura;
         jScrollPane2.setViewportView(tblInformacion);
 
         btnRealizarCompra.setText("Realizar Compra");
+        btnRealizarCompra.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnRealizarCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRealizarCompraActionPerformed(evt);
@@ -93,7 +98,7 @@ static LinkedList<Double> factura;
 
         lblRequisito.setBackground(new java.awt.Color(0, 204, 51));
         lblRequisito.setForeground(new java.awt.Color(0, 153, 0));
-        lblRequisito.setText("Vaya al menu a realizar la compra");
+        lblRequisito.setText("desea eliminar la compra");
 
         chkCarrito.setText("Esta correcto el carrito");
         chkCarrito.addActionListener(new java.awt.event.ActionListener() {
@@ -104,6 +109,14 @@ static LinkedList<Double> factura;
 
         jLabel2.setText("Precio Total");
 
+        btnBorrar.setText("Eliminar Carrito");
+        btnBorrar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlMostrarCarritoLayout = new javax.swing.GroupLayout(pnlMostrarCarrito);
         pnlMostrarCarrito.setLayout(pnlMostrarCarritoLayout);
         pnlMostrarCarritoLayout.setHorizontalGroup(
@@ -111,42 +124,45 @@ static LinkedList<Double> factura;
             .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
                 .addGroup(pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
-                        .addGap(199, 199, 199)
-                        .addComponent(btnMostrarVideojuegos))
-                    .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
-                        .addGap(99, 99, 99)
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(chkCarrito)
+                            .addComponent(btnRealizarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(45, 45, 45)
                         .addGroup(pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
-                                .addGroup(pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnRealizarCompra)
-                                    .addComponent(chkCarrito))
-                                .addGap(28, 28, 28)
-                                .addGroup(pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
-                                        .addComponent(jLabel2)
-                                        .addGap(29, 29, 29)
-                                        .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(lblRequisito, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(50, Short.MAX_VALUE))
+                                .addComponent(jLabel2)
+                                .addGap(26, 26, 26)
+                                .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblRequisito, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
+                        .addGap(115, 115, 115)
+                        .addComponent(btnMostrarVideojuegos, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlMostrarCarritoLayout.setVerticalGroup(
             pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlMostrarCarritoLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(btnMostrarVideojuegos)
-                .addGap(18, 18, 18)
+                .addGap(4, 4, 4)
+                .addComponent(btnMostrarVideojuegos, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(17, 17, 17)
                 .addGroup(pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(chkCarrito)
                     .addComponent(jLabel2)
                     .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlMostrarCarritoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRealizarCompra)
-                    .addComponent(lblRequisito))
-                .addContainerGap(41, Short.MAX_VALUE))
+                    .addComponent(btnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRealizarCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblRequisito)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -154,23 +170,20 @@ static LinkedList<Double> factura;
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(pnlMostrarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(pnlMostrarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(pnlMostrarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnlMostrarCarrito, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(528, 528, 528))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -188,7 +201,7 @@ static LinkedList<Double> factura;
         }
         txtPrecio.setText(Double.toString(precioTotal));
         factura.add(precioTotal);
-        
+        btnBorrar.setEnabled(true);
         
         // TODO add your handling code here:
     }//GEN-LAST:event_btnMostrarVideojuegosActionPerformed
@@ -202,14 +215,14 @@ static LinkedList<Double> factura;
       chkCarrito.setEnabled(false);
       txtPrecio.setText(null);
       panelFactura.setVisible(true);
-     
-      panelFactura.setVisible(true);
-      pnlMostrarCarrito.setVisible(false);
-      panelFactura.setSize(800,800);
-      panelFactura.setLocation(0,0);
-      add(panelFactura);
-      revalidate();
-      repaint();  
+     // pnlMostrarCarrito.setVisible(false);
+      guiFactura.setVisible(true);
+      GUIProyecto.listaVideojuego.clear();
+      //panelFactura.setSize(800,800);
+      //panelFactura.setLocation(100,-200);
+      //add(panelFactura);
+      //revalidate();
+      //repaint();  
 
      
       
@@ -219,24 +232,33 @@ static LinkedList<Double> factura;
 
     private void chkCarritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkCarritoActionPerformed
 
-
+       
        if(chkCarrito.isSelected()){
           lblRequisito.setEnabled(true);
          
           btnRealizarCompra.setEnabled(true);
-          
+          btnBorrar.setEnabled(false);
        }
        else {
           lblRequisito.setEnabled(false);
           btnRealizarCompra.setEnabled(false); 
-          
+          btnBorrar.setEnabled(true);
        }
        
         // TODO add your handling code here:
     }//GEN-LAST:event_chkCarritoActionPerformed
 
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+    txtPrecio.setText(null);
+    factura.clear();
+    dtmModelo.setRowCount(0);
+    GUIProyecto.listaVideojuego.clear();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBorrarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBorrar;
     private javax.swing.JButton btnMostrarVideojuegos;
     private javax.swing.JButton btnRealizarCompra;
     private javax.swing.JCheckBox chkCarrito;
