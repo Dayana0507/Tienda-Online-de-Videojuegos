@@ -88,21 +88,23 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="jLabel14" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="txtNombre" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="lblMensajeNombre" min="-2" pref="16" max="-2" attributes="0"/>
+                                      </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="txtCedula" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
-                                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="txtNombre" alignment="1" min="-2" pref="164" max="-2" attributes="0"/>
-                                                  <Component id="txtDireccion" alignment="1" min="-2" pref="164" max="-2" attributes="0"/>
-                                              </Group>
+                                              <Component id="txtDireccion" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                  <Component id="lblMensajeDireccion" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
-                                                  <Component id="lblMensajeCedula" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="lblMensajeNombre" alignment="0" min="-2" pref="16" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="lblMensajeDireccion" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
+                                              <Component id="lblMensajeCedula" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Component id="jLabel5" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
@@ -133,13 +135,14 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblMensajeNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtCedula" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -164,7 +167,7 @@
                   <Component id="pnlCredito" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="chkVerificar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
                   <Component id="btnGuardar" min="-2" pref="32" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -467,7 +470,6 @@
                               <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="rbtBancoPacifico" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel9" min="-2" pref="47" max="-2" attributes="0"/>
@@ -566,6 +568,14 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkVerificarActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel14">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Milton Joan Pila Tapia"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
